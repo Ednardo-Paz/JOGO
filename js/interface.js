@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    //pegando os quadrados
     let squares = document.querySelectorAll(".square");
+
     let botao = document.getElementById("btn");
     let botaoOkModal = document.getElementById("btnOK");
 
+    // evendo quando ele for clicado.
     squares.forEach((square) => {
         square.addEventListener('click', handleClick);
     })
@@ -31,7 +33,7 @@ function btnRecomecar() {
         }
     });
 }
-
+//vai receber o evento de click
 function handleClick(event) {
 
     let square = event.target;

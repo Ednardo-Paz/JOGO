@@ -1,6 +1,7 @@
 // Iniciar minhas variaveis     
 
 let board = ['', '', '', '', '', '', '', '', ''];
+//vez do jogador     
 let playerTime = 0;
 let symbols = ['o', 'x'];
 let gameOver = false;
@@ -25,6 +26,7 @@ function iniciaVariaveis(){
     gameOver = false;
 }
 
+// movimento do jogar
 function handleMove(position) {
 
     if (gameOver) {
